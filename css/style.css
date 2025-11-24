@@ -1,3 +1,50 @@
-img{
-    width: 100px
+/*mobile layout*/
+p{
+    color: black;
+}
+
+.ClothingImage{
+    width: 190px;
+}
+
+.AddToCart{
+    border-radius: 10px;
+}
+
+.btn-outline-dark:hover{
+    background-color: #bababa;
+}
+
+.ImageContainer{
+    margin: 10px;
+    background-color: #f4f4f4;
+    box-shadow: 10px 10px 10px #888;
+    border-radius: 10px;
+    height: 380px;
+}
+
+#Body{
+    background-color: #f4f4f4;
+    padding-bottom: 70px;
+}
+
+.removeButton{
+    height: 25px;
+    text-align: center;
+    line-height: 0;
+    vertical-align: middle;
+    margin-right: 25px;
+}
+
+.cartListItems{
+    margin-bottom: 10px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+.cartListItem:hover{
+    background-color: red;
+}
+
+.dropdown{
+    float: right;
 }
