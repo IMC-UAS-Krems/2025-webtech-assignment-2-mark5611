@@ -130,14 +130,89 @@
 
             <div class="container" id="SideTab">
 
-                <div class="dropdown">
-                    <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Cart
-                    </button>
-                    <ul class="dropdown-menu" id = cartItems>
-                        <li>Cart Is Empty</li>
-                    </ul>
+                <div class="row">
+
+                    <div class="container" id = "cartContainer">
+                        <div class = "container col-lg-5 d-flex float-end justify-content-end">
+                            <button class = "btn cartButton" onclick="operateSideBar()" id = "operateCartButton"><img src="images/Cart_Show.png" height="50px"></button>
+                        </div>
+                        <div class="container" id="cartSideBar">
+                            <ul id = cartItems>
+                                <li class="cartListItems">Cart Is Empty</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="container">
+                        <div class="col-md-6">
+                            <h3>Total:</h3>
+                            <h4 id="Total">€0</h4>
+                        </div>
+
+                        <label style="margin-top: 30px; margin-bottom: 15px;"><u>Billing Address:</u></label>
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                                <label for="inputName4" class="form-label">Full Name</label>
+                                <input type="email" class="form-control" id="inputName4">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddressBA" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="inputAddressBA" placeholder="1234 Main St">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddress2BA" class="form-label">Address 2</label>
+                                <input type="text" class="form-control" id="inputAddress2BA" placeholder="Apartment, studio, or floor">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputCityBA" class="form-label">City</label>
+                                <input type="text" class="form-control" id="inputCityBA">
+                            </div>
+                            <div class="col-md-2">
+                                <label for="inputZipBA" class="form-label">Zip</label>
+                                <input type="text" class="form-control" id="inputZipBA">
+                            </div>
+                        </form>
+
+                        <label style="margin-top: 30px; margin-bottom: 15px;"><u>Delivery Address:</u></label>
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                                <label for="inputEmail4" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddress" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddress2" class="form-label">Address 2</label>
+                                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputCity" class="form-label">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="col-md-2">
+                                <label for="inputZip" class="form-label">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        I Accept All terms
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">Check Out</button>
+                            </div>
+                        </form>
+                    </div>
+
                 </div>
+
+
 
             </div>
 

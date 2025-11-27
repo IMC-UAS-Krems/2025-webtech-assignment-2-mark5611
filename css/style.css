@@ -26,25 +26,73 @@ p{
 #Body{
     background-color: #f4f4f4;
     padding-bottom: 70px;
+    padding-top: 20px;
 }
+
+#Gallery{
+    margin-bottom: 50px;
+}
+
 
 .removeButton{
     height: 25px;
     text-align: center;
     line-height: 0;
     vertical-align: middle;
-    margin-right: 25px;
-}
-
-.cartListItems{
-    margin-bottom: 10px;
-    margin-right: 25px;
     margin-left: 25px;
 }
-.cartListItem:hover{
-    background-color: red;
+
+.cartListItems {
+    margin-right: 25px;
+    margin-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+/*source: Gemini*/
+.cartListItems::before {
+    content: "";           /* Required to make the element appear */
+    display: block;        /* Makes it take up its own line */
+    width: 50%;            /* LIMITS the length (can be % or px) */
+    border-top: 1px solid black;
+
+    /* OPTIONAL: To align it */
+    margin-bottom: 15px;   /* Replaces the padding-top visual space */
+
+    /* To offset it from the left: */
+    margin-left: 50%;
+    /* OR to Center it: margin: 0 auto 15px auto; */
+    /* OR to align Right: margin-left: auto; */
 }
 
-.dropdown{
+.cartButton{
+    height: 70px;
+}
+
+#cartSideBar{
+    display: none;
     float: right;
+    justify-content: end;
+    text-align: right;
+}
+
+#cartItems{
+    list-style-type: none;
+    background-color: #eae9e9;
+    color: black;
+    border: 1px solid black;
+}
+
+#cartContainer{
+    position: absolute;
+    right: 0;
+    width: 30%;
+    margin-left: 70%;
+
+}
+
+@media (max-width: 1800px) {
+    #cartContainer{
+
+    }
+    
 }
