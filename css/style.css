@@ -48,6 +48,7 @@ p{
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
 /*source: Gemini*/
 .cartListItems::before {
     content: "";           /* Required to make the element appear */
@@ -88,6 +89,26 @@ p{
     width: 30%;
     margin-left: 70%;
 
+}
+
+#SideTab{
+    display: none;
+}
+
+#SumUp{
+    display: none;
+}
+
+.itemListHr{
+    width: 250px;
+}
+
+.divider{
+    border-bottom: 1px solid black;
+}
+
+#SumUp{
+    display: none;
 }
 
 @media (max-width: 1800px) {
