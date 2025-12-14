@@ -71,13 +71,13 @@ function operateSideBar(){
     if (ocb.innerHTML.includes("Cart_Hide.png")) {
         console.log("close");
         side.style.display = "none";
-        ocb.innerHTML = '<img src="images/Cart_Show.png" height="50px">';
+        ocb.innerHTML = '<img src="imgs/Cart_Show.png" height="50px">';
 
     }
     else if (ocb.innerHTML.includes("Cart_Show.png")) {
         console.log("open");
         side.style.display = "block";
-        ocb.innerHTML = '<img src="images/Cart_Hide.png" height="50px">';
+        ocb.innerHTML = '<img src="imgs/Cart_Hide.png" height="50px">';
     }
 }
 
